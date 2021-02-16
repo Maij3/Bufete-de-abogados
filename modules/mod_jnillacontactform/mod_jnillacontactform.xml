@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_JNILLACONTACTFORM</name>
+	<author>Edric Navarro</author>
+	<creationDate>May 2015</creationDate>
+	<copyright>Copyright (C) 2015 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.2.2</version>
+	<description>MOD_JNILLACONTACTFORM_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<folder>vendor</folder>
+		<filename module="mod_jnillacontactform">mod_jnillacontactform.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<media destination="mod_jnillacontactform" folder="media">
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="form_inner_html"
+					label="MOD_JNILLACONTACTFORM_FORM_INNER_HTML_LABEL"
+					description="MOD_JNILLACONTACTFORM_FORM_INNER_HTML_DESC"
+					type="editor" 
+					editor="codemirror"
+					filter="raw"
+					default="
+						&#10;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#99;&#111;&#110;&#116;&#114;&#111;&#108;&#45;&#103;&#114;&#111;&#117;&#112;&quot;&gt;&#10;&#9;&lt;&#108;&#97;&#98;&#101;&#108;&#32;&#102;&#111;&#114;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#110;&#97;&#109;&#101;&#93;&quot;&gt;&#78;&#97;&#109;&#101;&lt;&#47;&#108;&#97;&#98;&#101;&#108;&gt;&#10;&#9;&lt;&#105;&#110;&#112;&#117;&#116;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#116;&#101;&#120;&#116;&quot;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#110;&#97;&#109;&#101;&#93;&quot;&gt;&#10;&#9;&lt;&#105;&#110;&#112;&#117;&#116;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#104;&#105;&#100;&#100;&#101;&#110;&quot;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#45;&#108;&#97;&#98;&#101;&#108;&#91;&#110;&#97;&#109;&#101;&#93;&quot;&#32;&#118;&#97;&#108;&#117;&#101;&#61;&quot;&#78;&#97;&#109;&#101;&quot;&gt;&#10;&lt;&#47;&#100;&#105;&#118;&gt;&#10;&#10;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#99;&#111;&#110;&#116;&#114;&#111;&#108;&#45;&#103;&#114;&#111;&#117;&#112;&quot;&gt;&#10;&#9;&lt;&#108;&#97;&#98;&#101;&#108;&#32;&#102;&#111;&#114;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#101;&#109;&#97;&#105;&#108;&#93;&quot;&gt;&#69;&#109;&#97;&#105;&#108;&lt;&#47;&#108;&#97;&#98;&#101;&#108;&gt;&#10;&#9;&lt;&#105;&#110;&#112;&#117;&#116;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#101;&#109;&#97;&#105;&#108;&quot;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#101;&#109;&#97;&#105;&#108;&#93;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#118;&#97;&#108;&#105;&#100;&#97;&#116;&#101;&#45;&#101;&#109;&#97;&#105;&#108;&quot;&gt;&#10;&#9;&lt;&#105;&#110;&#112;&#117;&#116;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#104;&#105;&#100;&#100;&#101;&#110;&quot;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#45;&#108;&#97;&#98;&#101;&#108;&#91;&#101;&#109;&#97;&#105;&#108;&#93;&quot;&#32;&#118;&#97;&#108;&#117;&#101;&#61;&quot;&#69;&#109;&#97;&#105;&#108;&quot;&gt;&#10;&lt;&#47;&#100;&#105;&#118;&gt;&#10;&#10;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#99;&#111;&#110;&#116;&#114;&#111;&#108;&#45;&#103;&#114;&#111;&#117;&#112;&quot;&gt;&#10;&#9;&lt;&#108;&#97;&#98;&#101;&#108;&#32;&#102;&#111;&#114;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#109;&#101;&#115;&#115;&#97;&#103;&#101;&#93;&quot;&gt;&#77;&#101;&#115;&#115;&#97;&#103;&#101;&lt;&#47;&#108;&#97;&#98;&#101;&#108;&gt;&#10;&#9;&lt;&#116;&#101;&#120;&#116;&#97;&#114;&#101;&#97;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#91;&#109;&#101;&#115;&#115;&#97;&#103;&#101;&#93;&quot;&#32;&#114;&#111;&#119;&#115;&#61;&quot;&#51;&quot;&gt;&lt;&#47;&#116;&#101;&#120;&#116;&#97;&#114;&#101;&#97;&gt;&#10;&#9;&lt;&#105;&#110;&#112;&#117;&#116;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#104;&#105;&#100;&#100;&#101;&#110;&quot;&#32;&#110;&#97;&#109;&#101;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#45;&#108;&#97;&#98;&#101;&#108;&#91;&#109;&#101;&#115;&#115;&#97;&#103;&#101;&#93;&quot;&#32;&#118;&#97;&#108;&#117;&#101;&#61;&quot;&#77;&#101;&#115;&#115;&#97;&#103;&#101;&quot;&gt;&#10;&lt;&#47;&#100;&#105;&#118;&gt;&#10;&#10;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#99;&#111;&#110;&#116;&#114;&#111;&#108;&#45;&#103;&#114;&#111;&#117;&#112;&#32;&#100;&#105;&#115;&#112;&#108;&#97;&#121;&#45;&#111;&#110;&#45;&#99;&#108;&#105;&#99;&#107;&quot;&gt;&#10;&#9;&lt;&#100;&#105;&#118;&#32;&#105;&#100;&#61;&quot;&#123;&#112;&#114;&#101;&#102;&#105;&#120;&#125;&#45;&#103;&#45;&#114;&#101;&#99;&#97;&#112;&#116;&#99;&#104;&#97;&quot;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#103;&#45;&#114;&#101;&#99;&#97;&#112;&#116;&#99;&#104;&#97;&quot;&#32;&#100;&#97;&#116;&#97;&#45;&#115;&#105;&#116;&#101;&#107;&#101;&#121;&#61;&quot;&#123;&#115;&#105;&#116;&#101;&#45;&#107;&#101;&#121;&#125;&quot;&#32;&#115;&#116;&#121;&#108;&#101;&#61;&quot;&#116;&#114;&#97;&#110;&#115;&#102;&#111;&#114;&#109;&#58;&#115;&#99;&#97;&#108;&#101;&#40;&#48;&#46;&#55;&#55;&#41;&#59;&#116;&#114;&#97;&#110;&#115;&#102;&#111;&#114;&#109;&#45;&#111;&#114;&#105;&#103;&#105;&#110;&#58;&#48;&#32;&#48;&quot;&gt;&lt;&#47;&#100;&#105;&#118;&gt;&#10;&lt;&#47;&#100;&#105;&#118;&gt;&#10;&#10;&lt;&#100;&#105;&#118;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#99;&#111;&#110;&#116;&#114;&#111;&#108;&#45;&#103;&#114;&#111;&#117;&#112;&#32;&#100;&#105;&#115;&#112;&#108;&#97;&#121;&#45;&#111;&#110;&#45;&#99;&#108;&#105;&#99;&#107;&quot;&gt;&#10;&#9;&lt;&#98;&#117;&#116;&#116;&#111;&#110;&#32;&#99;&#108;&#97;&#115;&#115;&#61;&quot;&#98;&#116;&#110;&#32;&#98;&#116;&#110;&#45;&#112;&#114;&#105;&#109;&#97;&#114;&#121;&#32;&#118;&#97;&#108;&#105;&#100;&#97;&#116;&#101;&quot;&#32;&#116;&#121;&#112;&#101;&#61;&quot;&#115;&#117;&#98;&#109;&#105;&#116;&quot;&gt;&#83;&#117;&#98;&#109;&#105;&#116;&lt;&#47;&#98;&#117;&#116;&#116;&#111;&#110;&gt;&#10;&lt;&#47;&#100;&#105;&#118;&gt;&#10;
+					"
+				/>
+				<field
+					name="form_class"
+					type="textarea"
+					default="form-horizontal"
+					rows="3"
+					filter="html"
+					label="MOD_JNILLACONTACTFORM_FORM_CLASS_LABEL"
+					description="MOD_JNILLACONTACTFORM_FORM_CLASS_DESC" />
+				<field
+					name="recipients"
+					type="textarea"
+					default=""
+					rows="3"
+					filter="html"
+					label="MOD_JNILLACONTACTFORM_RECIPIENTS_LABEL"
+					description="MOD_JNILLACONTACTFORM_RECIPIENTS_DESC" 
+					required="true" />
+				<field
+					name="subject"
+					type="text"
+					default=""
+					label="MOD_JNILLACONTACTFORM_SUBJECT_LABEL"
+					description="MOD_JNILLACONTACTFORM_SUBJECT_DESC" />
+				<field name="enable_recaptcha" type="radio"
+					class="btn-group"
+					default="1"
+					label="MOD_JNILLACONTACTFORM_ENABLE_RECAPTCHA_LABEL"
+					description="MOD_JNILLACONTACTFORM_ENABLE_RECAPTCHA_DESC" >
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field type="spacer" name="manage-recaptcha" label="MOD_JNILLACONTACTFORM_MANAGE_RECAPTCHA_KEYS" />
+				<field
+					name="recaptcha_site_key"
+					type="text"
+					default=""
+					label="MOD_JNILLACONTACTFORM_RECAPTCHA_SITE_KEY_LABEL"
+					description="MOD_JNILLACONTACTFORM_RECAPTCHA_SITE_KEY_DESC" />
+				<field
+					name="recaptcha_secret_key"
+					type="text"
+					default=""
+					label="MOD_JNILLACONTACTFORM_RECAPTCHA_SECRET_KEY_LABEL"
+					description="MOD_JNILLACONTACTFORM_RECAPTCHA_SECRET_KEY_DESC" />
+				<field name="add_js" type="radio"
+					class="btn-group"
+					default="1"
+					label="MOD_JNILLACONTACTFORM_ADD_JS_LABEL"
+					description="MOD_JNILLACONTACTFORM_ADD_JS_DESC" >
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field
+					name="country_filter_mode" type="radio"
+					class="btn-group"
+					default="whitelist"
+					label="MOD_JNILLACONTACTFORM_COUNTRY_FILTER_MODE_LABEL"
+				>
+					<option value="whitelist">MOD_JNILLACONTACTFORM_COUNTRY_FILTER_MODE_WHITELIST</option>
+					<option value="blacklist">MOD_JNILLACONTACTFORM_COUNTRY_FILTER_MODE_BLACKLIST</option>
+					<option value="disabled">MOD_JNILLACONTACTFORM_COUNTRY_FILTER_MODE_DISABLED</option>
+				</field>
+				<field
+					name="country_filters"
+					type="textarea"
+					default="US&#10;CO&#10;VE"
+					rows="6"
+					filter="raw"
+					label="MOD_JNILLACONTACTFORM_COUNTRY_FILTER_LABEL"
+					description="MOD_JNILLACONTACTFORM_COUNTRY_FILTER_DESC" 
+				/>
+				<field type="spacer" name="rejection-log" label="MOD_JNILLACONTACTFORM_REJECTION_LOG" />
+				<field name="debug_mode" type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_JNILLACONTACTFORM_DEBUG_MODE_LABEL"
+					description="MOD_JNILLACONTACTFORM_DEBUG_MODE_DESC" >
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+
+
+
+

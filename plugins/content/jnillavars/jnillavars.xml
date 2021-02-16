@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_JNILLAVARS</name>
+	<author>jnilla.com</author>
+	<creationDate>Oct 2014</creationDate>
+	<copyright>Copyright (C) 2014 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>jnilla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_JNILLAVARS_XML_DESCRIPTION</description>
+	
+	<files>
+		<folder>language</folder>
+		<filename plugin="jnillavars">jnillavars.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+</extension>
+
+
+
+

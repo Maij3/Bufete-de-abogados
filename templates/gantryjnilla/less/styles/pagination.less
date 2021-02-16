@@ -1,0 +1,43 @@
+.pagination {
+	text-align: center;
+	.pagination-counter {
+		float: none;
+	}
+
+	ul li {
+		white-space: nowrap;
+	}
+
+	ul li a [class ^= "icon-"] , ul li a [class *= " icon-"] {
+		line-height: .9em;
+	}
+
+	ul li.active a {
+		opacity: 0.6;
+	}
+
+	ul li.disabled {
+	}
+
+	ul li .icon-first:before {
+		content: "\f053\f053";
+	}
+
+	ul li .icon-previous:before {
+		content: "\f053";
+	}
+
+	ul li .icon-next:before {
+		content: "\f054";
+	}
+
+	ul li .icon-last:before {
+		content: "\f054\f054";
+	}
+
+	.pnum {
+		@media only screen and (max-width: 979px) {
+			display: none;
+		}
+	}
+}

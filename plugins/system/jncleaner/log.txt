@@ -1,0 +1,58 @@
+======================
+2019-07-02 22:41:59
+Timer: 1562121719.9466
+Interval: 21600
+======================
+--Ignore
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/configuration.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/index.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/administrator/index.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/administrator/language/en-GB/en-GB.localise.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/language/en-GB/en-GB.localise.php
+--Delete
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/htaccess.txt
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/LICENSE.txt
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/README.txt
+
+
+
+
+
+======================
+2019-07-03 11:10:55
+Timer: 44935.330138922
+Interval: 21600
+======================
+--Ignore
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/configuration.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/index.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/administrator/index.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/administrator/language/en-GB/en-GB.localise.php
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/language/en-GB/en-GB.localise.php
+--Delete
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/htaccess.txt
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/LICENSE.txt
+/home/enav/myserver/public_html/enav/gantry-jnilla-quickstart/README.txt
+
+
+
+
+
+======================
+2021-01-25 14:40:32
+Timer: 49436977.575388
+Interval: 21600
+======================
+--Ignore
+/home/jnilmzhp/public_html/dev/test420/configuration.php
+/home/jnilmzhp/public_html/dev/test420/index.php
+/home/jnilmzhp/public_html/dev/test420/administrator/index.php
+/home/jnilmzhp/public_html/dev/test420/administrator/language/en-GB/en-GB.localise.php
+/home/jnilmzhp/public_html/dev/test420/language/en-GB/en-GB.localise.php
+--Delete
+/home/jnilmzhp/public_html/dev/test420/Jnilla Quickstart  v2.0.7.zip
+
+
+
+
+

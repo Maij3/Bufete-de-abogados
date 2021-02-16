@@ -1,0 +1,76 @@
+
+
+
+.jn-drawer {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	top: 0;
+	bottom: 0;
+	max-width: 90%;
+	z-index: 10;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+	width: 300px;
+}
+
+.jn-drawer-open {
+	overflow-x: hidden;
+}
+
+.jn-drawer-left {
+	left: -303px;
+}
+
+.jn-drawer-left.jn-drawer-open {
+	-webkit-transform: translateX(300px);
+	-moz-transform: translateX(300px);
+	-ms-transform: translateX(300px);
+	-o-transform: translateX(300px);
+	transform: translateX(300px)
+}
+
+.jn-drawer-right {
+	right: -303px;
+}
+
+.jn-drawer-right.jn-drawer-open {
+	-webkit-transform: translateX(-300px);
+	-moz-transform: translateX(-300px);
+	-ms-transform: translateX(-300px);
+	-o-transform: translateX(-300px);
+	transform: translateX(-300px)
+}
+
+.jn-drawer-body {
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.jn-drawer-body-left {
+	-webkit-transform: translateX(300px);
+	-moz-transform: translateX(300px);
+	-ms-transform: translateX(300px);
+	-o-transform: translateX(300px);
+	transform: translateX(300px)
+}
+
+.jn-drawer-body-right {
+	-webkit-transform: translateX(-300px);
+	-moz-transform: translateX(-300px);
+	-ms-transform: translateX(-300px);
+	-o-transform: translateX(-300px);
+	transform: translateX(-300px)
+}
+
+
+

@@ -1,0 +1,1 @@
+{"site_path":"\/opt\/lampp\/htdocs\/Bufete-De-Abogados","log_path":"\/opt\/lampp\/htdocs\/Bufete-De-Abogados\/administrator\/logs","tmp_path":"\/opt\/lampp\/htdocs\/Bufete-De-Abogados\/tmp"}

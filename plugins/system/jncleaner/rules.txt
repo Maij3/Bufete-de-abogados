@@ -1,0 +1,69 @@
+# Site Root
+delete: *.php
+delete: *.zip
+delete: CONTRIBUTING.md
+delete: htaccess.txt
+delete: LICENSE.txt
+delete: README.md
+delete: README.txt
+ignore: configuration.php
+ignore: index.php
+
+# administrator
+delete: administrator/*.php
+ignore: administrator/index.php
+
+# administrator/cache
+delete: administrator/cache/*.php
+
+# administrator/component
+delete: administrator/component/*.php
+
+# administrator/help
+delete: administrator/help/**/*.php
+
+# administrator/language
+delete: administrator/language/*.php
+delete: administrator/language/en-GB/*.php
+ignore: administrator/language/en-GB/en-GB.localise.php
+
+# administrator/manifests
+delete: administrator/manifests/*.php
+
+# administrator/modules
+delete: administrator/modules/*.php
+
+# administrator/templates
+delete: administrator/templates/*.php
+
+# cache
+delete: cache/*.php
+
+# components
+delete: components/*.php
+
+#images
+delete: images/**/*.php
+
+# language
+delete: language/*.php
+delete: language/en-GB/*.php
+ignore: language/en-GB/en-GB.localise.php
+
+# layouts
+delete: layouts/*.php
+
+# media
+delete: media/*.php
+
+# module
+delete: module/*.php
+
+# plugins
+delete: plugins/*.php
+delete: plugins/*/*.php
+
+# templates
+delete: templates/*.php
+
+

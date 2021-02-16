@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<extension method="upgrade" type="template" version="2.5">
+	<name>GantryJnilla</name>
+	<author>Edric Navarro</author>
+	<creationDate>February  2013</creationDate>
+	<copyright>Copyright (C) 2013 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.1.0</version>
+	<legacycss>false</legacycss>
+	<gridcss>false</gridcss>
+	<description>TPL_GANTRYJNILLA_XML_DESCRIPTION</description>
+	
+	<files>
+		<folder>admin</folder>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<folder>images</folder>
+		<filename>component.php</filename>
+		<filename>gantry.config.php</filename>
+		<filename>htaccess.txt</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+		<filename>debugbody.php</filename>
+		<folder>css-compiled</folder>
+		<folder>less</folder>
+		<folder>custom</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<filename>template-options.xml</filename>
+		<filename>offline.php</filename>
+		<folder>features</folder>
+		<filename>template_thumbnail.png</filename>
+		<folder>lib</folder>
+		<filename>tests.php</filename>
+		<folder>js</folder>
+		<filename>layout-preview.png</filename>
+		<filename>template-overview.php</filename>
+		<filename>page-under-construction.php</filename>
+		<filename>debugbody.php</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_gantryjnilla.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_gantryjnilla.sys.ini</language>
+	</languages>
+	
+	<positions>
+		<position>jn-top-1-a</position>
+		<position>jn-top-1-b</position>
+		<position>jn-top-1-c</position>
+		<position>jn-top-1-d</position>
+		<position>jn-top-1-e</position>
+		<position>jn-top-1-f</position>
+
+		<position>jn-header-1-a</position>
+		<position>jn-header-1-b</position>
+		<position>jn-header-1-c</position>
+		<position>jn-header-1-d</position>
+		<position>jn-header-1-e</position>
+		<position>jn-header-1-f</position>
+
+		<position>jn-header-2-a</position>
+		<position>jn-header-2-b</position>
+		<position>jn-header-2-c</position>
+		<position>jn-header-2-d</position>
+		<position>jn-header-2-e</position>
+		<position>jn-header-2-f</position>
+		
+		<position>jn-header-3-a</position>
+		<position>jn-header-3-b</position>
+		<position>jn-header-3-c</position>
+		<position>jn-header-3-d</position>
+		<position>jn-header-3-e</position>
+		<position>jn-header-3-f</position>
+		
+		<position>jn-header-4-a</position>
+		<position>jn-header-4-b</position>
+		<position>jn-header-4-c</position>
+		<position>jn-header-4-d</position>
+		<position>jn-header-4-e</position>
+		<position>jn-header-4-f</position>
+
+		<position>jn-system</position>
+
+		<position>jn-before-1-a</position>
+		<position>jn-before-1-b</position>
+		<position>jn-before-1-c</position>
+		<position>jn-before-1-d</position>
+		<position>jn-before-1-e</position>
+		<position>jn-before-1-f</position>
+
+		<position>jn-before-2-a</position>
+		<position>jn-before-2-b</position>
+		<position>jn-before-2-c</position>
+		<position>jn-before-2-d</position>
+		<position>jn-before-2-e</position>
+		<position>jn-before-2-f</position>
+		
+		<position>jn-before-3-a</position>
+		<position>jn-before-3-b</position>
+		<position>jn-before-3-c</position>
+		<position>jn-before-3-d</position>
+		<position>jn-before-3-e</position>
+		<position>jn-before-3-f</position>
+		
+		<position>jn-before-4-a</position>
+		<position>jn-before-4-b</position>
+		<position>jn-before-4-c</position>
+		<position>jn-before-4-d</position>
+		<position>jn-before-4-e</position>
+		<position>jn-before-4-f</position>
+		
+		<position>jn-before-5-a</position>
+		<position>jn-before-5-b</position>
+		<position>jn-before-5-c</position>
+		<position>jn-before-5-d</position>
+		<position>jn-before-5-e</position>
+		<position>jn-before-5-f</position>
+
+		<position>jn-before-6-a</position>
+		<position>jn-before-6-b</position>
+		<position>jn-before-6-c</position>
+		<position>jn-before-6-d</position>
+		<position>jn-before-6-e</position>
+		<position>jn-before-6-f</position>
+
+		<position>jn-before-7-a</position>
+		<position>jn-before-7-b</position>
+		<position>jn-before-7-c</position>
+		<position>jn-before-7-d</position>
+		<position>jn-before-7-e</position>
+		<position>jn-before-7-f</position>
+
+		<position>jn-before-8-a</position>
+		<position>jn-before-8-b</position>
+		<position>jn-before-8-c</position>
+		<position>jn-before-8-d</position>
+		<position>jn-before-8-e</position>
+		<position>jn-before-8-f</position>
+		
+		<position>jn-above-1-a</position>
+		<position>jn-above-1-b</position>
+		<position>jn-above-1-c</position>
+		<position>jn-above-1-d</position>
+		<position>jn-above-1-e</position>
+		<position>jn-above-1-f</position>
+		
+		<position>jn-above-2-a</position>
+		<position>jn-above-2-b</position>
+		<position>jn-above-2-c</position>
+		<position>jn-above-2-d</position>
+		<position>jn-above-2-e</position>
+		<position>jn-above-2-f</position>
+		
+		<position>jn-above-3-a</position>
+		<position>jn-above-3-b</position>
+		<position>jn-above-3-c</position>
+		<position>jn-above-3-d</position>
+		<position>jn-above-3-e</position>
+		<position>jn-above-3-f</position>
+		
+		<position>jn-above-4-a</position>
+		<position>jn-above-4-b</position>
+		<position>jn-above-4-c</position>
+		<position>jn-above-4-d</position>
+		<position>jn-above-4-e</position>
+		<position>jn-above-4-f</position>
+		
+		<position>jn-sidebar-a</position>
+		<position>jn-sidebar-b</position>
+		<position>jn-sidebar-c</position>
+		
+		<position>jn-below-1-a</position>
+		<position>jn-below-1-b</position>
+		<position>jn-below-1-c</position>
+		<position>jn-below-1-d</position>
+		<position>jn-below-1-e</position>
+		<position>jn-below-1-f</position>
+		
+		<position>jn-below-2-a</position>
+		<position>jn-below-2-b</position>
+		<position>jn-below-2-c</position>
+		<position>jn-below-2-d</position>
+		<position>jn-below-2-e</position>
+		<position>jn-below-2-f</position>
+		
+		<position>jn-below-3-a</position>
+		<position>jn-below-3-b</position>
+		<position>jn-below-3-c</position>
+		<position>jn-below-3-d</position>
+		<position>jn-below-3-e</position>
+		<position>jn-below-3-f</position>
+		
+		<position>jn-below-4-a</position>
+		<position>jn-below-4-b</position>
+		<position>jn-below-4-c</position>
+		<position>jn-below-4-d</position>
+		<position>jn-below-4-e</position>
+		<position>jn-below-4-f</position>
+		
+		<position>jn-after-1-a</position>
+		<position>jn-after-1-b</position>
+		<position>jn-after-1-c</position>
+		<position>jn-after-1-d</position>
+		<position>jn-after-1-e</position>
+		<position>jn-after-1-f</position>
+
+		<position>jn-after-2-a</position>
+		<position>jn-after-2-b</position>
+		<position>jn-after-2-c</position>
+		<position>jn-after-2-d</position>
+		<position>jn-after-2-e</position>
+		<position>jn-after-2-f</position>
+		
+		<position>jn-after-3-a</position>
+		<position>jn-after-3-b</position>
+		<position>jn-after-3-c</position>
+		<position>jn-after-3-d</position>
+		<position>jn-after-3-e</position>
+		<position>jn-after-3-f</position>
+		
+		<position>jn-after-4-a</position>
+		<position>jn-after-4-b</position>
+		<position>jn-after-4-c</position>
+		<position>jn-after-4-d</position>
+		<position>jn-after-4-e</position>
+		<position>jn-after-4-f</position>
+		
+		<position>jn-after-5-a</position>
+		<position>jn-after-5-b</position>
+		<position>jn-after-5-c</position>
+		<position>jn-after-5-d</position>
+		<position>jn-after-5-e</position>
+		<position>jn-after-5-f</position>
+		
+		<position>jn-after-6-a</position>
+		<position>jn-after-6-b</position>
+		<position>jn-after-6-c</position>
+		<position>jn-after-6-d</position>
+		<position>jn-after-6-e</position>
+		<position>jn-after-6-f</position>
+		
+		<position>jn-after-7-a</position>
+		<position>jn-after-7-b</position>
+		<position>jn-after-7-c</position>
+		<position>jn-after-7-d</position>
+		<position>jn-after-7-e</position>
+		<position>jn-after-7-f</position>
+		
+		<position>jn-after-8-a</position>
+		<position>jn-after-8-b</position>
+		<position>jn-after-8-c</position>
+		<position>jn-after-8-d</position>
+		<position>jn-after-8-e</position>
+		<position>jn-after-8-f</position>
+		
+		<position>jn-footer-1-a</position>
+		<position>jn-footer-1-b</position>
+		<position>jn-footer-1-c</position>
+		<position>jn-footer-1-d</position>
+		<position>jn-footer-1-e</position>
+		<position>jn-footer-1-f</position>
+		
+		<position>jn-footer-2-a</position>
+		<position>jn-footer-2-b</position>
+		<position>jn-footer-2-c</position>
+		<position>jn-footer-2-d</position>
+		<position>jn-footer-2-e</position>
+		<position>jn-footer-2-f</position>
+		
+		<position>jn-footer-3-a</position>
+		<position>jn-footer-3-b</position>
+		<position>jn-footer-3-c</position>
+		<position>jn-footer-3-d</position>
+		<position>jn-footer-3-e</position>
+		<position>jn-footer-3-f</position>
+		
+		<position>jn-footer-4-a</position>
+		<position>jn-footer-4-b</position>
+		<position>jn-footer-4-c</position>
+		<position>jn-footer-4-d</position>
+		<position>jn-footer-4-e</position>
+		<position>jn-footer-4-f</position>
+		
+		<position>jn-bottom-1-a</position>
+		<position>jn-bottom-1-b</position>
+		<position>jn-bottom-1-c</position>
+		<position>jn-bottom-1-d</position>
+		<position>jn-bottom-1-e</position>
+		<position>jn-bottom-1-f</position>
+		
+		<position>jn-drawer-left</position>
+		<position>jn-drawer-right</position>
+		
+		<position>jn-debug</position>
+	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="base">
+				<field default="true" name="master" type="hidden" value="true"/>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

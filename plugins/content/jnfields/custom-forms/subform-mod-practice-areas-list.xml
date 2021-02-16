@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="title"
+	   type="text"
+	   label="Write Title For Module"
+	   description="Write Title For Module"
+	/>
+	<field 
+		name="link" 
+		type="url" 
+		default="" 
+		label="Enter a URL" 
+		description=""
+	/>
+</form>

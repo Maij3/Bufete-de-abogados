@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
+
+
+
+@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 979px) {
+@media only screen and (min-width: 980px) {
+
+
+
+

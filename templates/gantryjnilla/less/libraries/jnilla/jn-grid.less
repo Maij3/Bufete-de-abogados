@@ -1,0 +1,38 @@
+//
+// Jnilla gutterless grid system
+// --------------------------------------------------
+
+
+// Make grid
+#jn-grid > .fluid;
+
+// Narrower container for some tablets to make it look nicer
+.container {
+	@media only screen and (min-width: 481px) and (max-width: 767px) {
+		width: 480px;
+	}
+}
+
+// Make grid responsive
+@media (max-width: 767px) {
+	[class *= "jn-span-"] , .jn-row-fluid [class *= "jn-span-"] {
+		float: none;
+		display: block;
+		width: 100%;
+		.box-sizing (border-box);
+	}
+
+	.jn-span-12 , .jn-row-fluid .jn-span-12 {
+		width: 100%;
+		.box-sizing (border-box);
+	}
+
+	.jn-row-fluid [class *= "jn-offset-"]:first-child {
+		margin-left: 0;
+	}
+
+	[class *= "jn-push-"] , [class *= "jn-pull-"] , .jn-row-fluid [class *= "jn-push-"] , .jn-row-fluid [class *= "jn-pull-"] {
+		left: auto;
+	}
+}
+

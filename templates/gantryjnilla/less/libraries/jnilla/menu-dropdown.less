@@ -1,0 +1,86 @@
+// Note: There must be no spaces between the menu elements markup
+
+.menu-dropdown {
+	// from root and below
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+	ul {
+		margin: 0;
+	padding: 0;
+	list-style: none outside none;
+	}
+	
+	display: block;
+	
+	li {
+		position: relative;
+		display: block;
+		float: left;
+	}
+	
+	li > ul {
+		visibility: hidden;
+	}
+
+	li:hover > ul,
+	li.open > ul {
+		visibility: visible;
+	}
+	
+	// from sub1 and below
+	ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: @zindexDropdown;
+		background-color: #fff;
+		
+		li {
+			float: none;
+		}
+		
+		li .item {
+			white-space: nowrap;
+			min-width: 160px;
+		}
+	}
+	
+	// from sub2 and below
+	ul ul {
+		left: 70%;
+		top: 0;
+	}
+	
+	// default items styles
+	.item {
+		display: block;
+		line-height: 1em;
+		padding: 1em;
+	}
+	
+	.item {
+		&:hover, &:focus{
+			text-decoration: none;
+			color: white;
+			background-color: @linkColor;
+		}
+	}
+	
+	.active > .item {
+		color: white;
+		background-color: @linkColor;
+	}
+	
+	.parent > .item:after {
+		.prepare-font-awesome;
+		content: "\f054";
+	}
+	
+	> .parent > .item:after {
+		.prepare-font-awesome;
+		content: "\f078";
+	}
+	
+}
+

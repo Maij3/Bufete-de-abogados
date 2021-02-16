@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JNILLADEVFLAG</name>
+	<author>jnilla.com</author>
+	<creationDate>Oct 2014</creationDate>
+	<copyright>Copyright (C) 2014 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_JNILLADEVFLAG_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<filename plugin="jnilladevflag">jnilladevflag.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mode" type="radio"
+					class="btn-group"
+					default="0"
+					label="Mode"
+					description="PLG_SYSTEM_JNILLA_FIELD_COMPILER_DESC"
+				>
+					<option value="0">Development</option>
+					<option value="1">Live</option>
+					<option value="2">Backup</option>
+				</field>
+				<field
+					name="dev_url"
+					type="text"
+					default=""
+					label="Development URL"
+					description="Development URL"
+				/>
+				<field
+					name="live_url"
+					type="text"
+					default=""
+					label="Live URL"
+					description="Live URL"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

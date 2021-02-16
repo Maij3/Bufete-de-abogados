@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JNCLEANER</name>
+	<author>jnilla.com</author>
+	<creationDate>Nov 2018</creationDate>
+	<copyright>Copyright (C) 2018 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_SYSTEM_JNCLEANER_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<filename plugin="jncleaner">jncleaner.php</filename>
+		<filename>index.html</filename>
+		<filename>rules.txt</filename>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Jnilla - Jn Cleaner">https://www.estudioc8.com/downloads_/joomla/plg_system_jncleaner/v1/updates.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				 <field 
+					name="rules" 
+					label="Filter Rules"
+					type="editor"
+					editor="codemirror"
+					filter="raw"
+				/>
+				<field
+					name="interval" 
+					label="PLG_SYSTEM_JNCLEANER_INTERVAL_FIELD_LABEL" 
+					type="list" 
+					default="6"
+					filter="integer"
+					>
+					<option value="1">1 Hour</option>
+					<option value="2">2 Hours</option>
+					<option value="6">6 Hours</option>
+					<option value="12">12 Hours</option>
+					<option value="24">1 Day</option>
+					<option value="168">1 Week</option>
+					<option value="336">2 Weeks</option>
+					<option value="720">1 Month</option>
+				</field>
+				<field 
+					type="spacer" 
+					name="loglink" 
+					label="PLG_SYSTEM_JNCLEANER_LOGLINK_FIELD_LABEL" 
+				/>
+				<field
+					name="debugMode"	
+					label="PLG_SYSTEM_JNCLEANER_DEBUGMODE_FIELD_LABEL"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
+
+
+

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="template-options">
+	<fieldset name="toolbar-panel" label="TOOLBAR">
+		<field name="presets" type="preset" mode="scroller" default="preset1" setbyurl="true" setinoverride="false" panel_position="left" show_label="false"/>
+	</fieldset>
+
+	<fieldset name="overview" label="OVERVIEW">
+		<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false" />
+		<field name="overview" type="file" path="/template-overview.php" show_label="false"/>
+	</fieldset>
+
+	<fieldset name="style" label="STYLE">
+		<field name="master" type="hidden" value="false" default="true"/>
+		<field name="current_id" type="hidden" value="false" default="true"/>
+		<field name="gantry" type="gantry" value="" panel_position="hiddens"/>
+		<field name="template_full_name" type="hidden" default="Gantry Jnilla"/>
+		<field name="grid_system" type="hidden" default="12"/>
+		<field name="template_prefix" type="hidden" default="gantry-"/>
+		<field name="cookie_time" type="hidden" default="31536000"/>
+		<field name="override_set" type="hidden" default="2.5"/>		
+		<field name="name" type="hidden" default="Preset1" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+		<field name="copy_lang_files_if_diff" type="hidden" default="1"/>
+ 
+		<!-- styles -->
+		<field name="google_font_01" type="text"
+			label="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_01_LABEL"
+			description="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_DESC"
+			default=""
+		/>
+		<field name="google_font_02" type="text"
+			label="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_02_LABEL"
+			description="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_DESC"
+			default=""
+		/>
+		<field name="google_font_03" type="text"
+			label="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_03_LABEL"
+			description="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_DESC"
+			default=""
+		/>
+		<field name="google_font_04" type="text"
+			label="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_04_LABEL"
+			description="TPL_GANTRYJNILLA_FIELD_GOOGLE_FONT_DESC"
+			default=""
+		/>
+		
+		<!-- extra bottom space -->
+		<field name="spacer1" type="spacer" label="" />
+		<field name="spacer2" type="spacer" label="" />
+		<field name="spacer3" type="spacer" label="" />
+	
+	</fieldset>
+	
+	<fieldset name="features" label="FEATURES">
+		<field name="systemmessages-priority" type="hidden" default="1"/>
+		<field name="styledeclaration-enabled" type="hidden" default="1"/>
+		
+		<fields name="systemmessages" type="chain" label="System Messages" description="Defines System Messages behavior">
+			<field name="enabled" type="toggle" default="1" label="SHOW"/>
+			<field name="location" type="selectbox" default="jn-before" label="Locate after:" description="Defines System Messages location">
+				<option value="jn-top">jn-top</option>
+				<option value="jn-header">jn-header</option>
+				<option value="jn-before">jn-before</option>
+				<option value="jn-main">jn-main</option>
+				<option value="jn-after">jn-after</option>
+				<option value="jn-bottom">jn-bottom</option>
+			</field>
+		</fields>
+		
+	</fieldset>
+
+	<fieldset name="layouts" label="LAYOUTS">
+	
+		<!-- jn-top -->
+		<fields name="jn-top-1" type="position" label="jn-Top-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		
+		<!-- jn-header -->
+		<fields name="jn-header-1" type="position" label="jn-Header-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-header-2" type="position" label="jn-Header-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-header-3" type="position" label="jn-Header-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-header-4" type="position" label="jn-Header-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+
+		<!-- jn-before -->
+		<field name="spacer_before" type="spacer" label="" />
+		<fields name="jn-before-1" type="position" label="jn-Before-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-2" type="position" label="jn-Before-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-3" type="position" label="jn-Before-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-4" type="position" label="jn-Before-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-5" type="position" label="jn-Before-5" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-6" type="position" label="jn-Before-6" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-7" type="position" label="jn-Before-7" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-before-8" type="position" label="jn-Before-8" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		
+		<!-- jn-above -->
+		<field name="spacer_above" type="spacer" label="" />
+		<fields name="jn-above-1" type="position" label="jn-Above-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-above-2" type="position" label="jn-Above-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-above-3" type="position" label="jn-Above-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-above-4" type="position" label="jn-Above-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+
+		<!-- jn-main-body -->
+		<field name="spacer_component" type="spacer" label="" />
+		<field name="mainbodyPosition" type="positions" default="6,3,3" label="jn-MainBody" description="">
+			<schemas>1,2,3,4</schemas>
+			<words>sa,sb,sc,mb</words>
+			<type>custom</type>
+		</field>
+		
+		<!-- jn-below -->
+		<field name="spacer_below" type="spacer" label="" />
+		<fields name="jn-below-1" type="position" label="jn-Below-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-below-2" type="position" label="jn-Below-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-below-3" type="position" label="jn-Below-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-below-4" type="position" label="jn-Below-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+
+		<!-- jn-after- -->
+		<field name="spacer_after-" type="spacer" label="" />
+		<fields name="jn-after-1" type="position" label="jn-After-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-2" type="position" label="jn-After-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-3" type="position" label="jn-After-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-4" type="position" label="jn-After-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-5" type="position" label="jn-After-5" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-6" type="position" label="jn-After-6" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-7" type="position" label="jn-After-7" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-after-8" type="position" label="jn-After-8" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+
+		<!-- jn-footer- -->
+		<field name="spacer_footer-" type="spacer" label="" />
+		<fields name="jn-footer-1" type="position" label="jn-Footer-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-footer-2" type="position" label="jn-Footer-2" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-footer-3" type="position" label="jn-Footer-3" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		<fields name="jn-footer-4" type="position" label="jn-Footer-4" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+		
+		<!-- jn-bottom -->
+		<fields name="jn-bottom-1" type="position" label="jn-Bottom-1" description="">
+			<field name="layout" type="positions" default="3,3,3,3" label="">
+				<schemas>1,2,3,4,5,6</schemas>
+				<words>2,3,4,5,6,7,8,9,10</words>
+			</field>
+			<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+			<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+		</fields>
+	</fieldset>
+	
+	<fieldset name="advanced" label="ADVANCED">
+	
+		<field name="component-enabled" type="toggle" default="1" label="COMPONENT_ENABLED" description="COMPONENT_ENABLED_DESC"/>
+
+		<fields name="less" type="chain" label="LESS_COMPILER" description="LESS_COMPILER_DESC">
+			<field name="compression" type="toggle" default="1" label="LESS_COMPRESSION" description="LESS_COMPRESSION_DESC"/>
+			<field name="compilewait" type="textplus" default="2" append="sec" label="LESS_COMPILEWAIT" description="LESS_COMPILEWAIT_DESC" class="text-short" />
+			<field name="debugheader" type="toggle" default="0" label="LESS_DEBUGHEADER" description="LESS_DEBUGHEADER_DESC"/>
+			<field name="clear" type="ajaxbutton" text="LESS_COMPILE_CLEAR_TEXT" model="lesscompiler" action="clear" label="LESS_COMPILE_CLEAR" setinoverride="false" />
+		</fields>
+	</fieldset>
+	
+	<fieldset name="assignment" label="ASSIGNMENTS">
+		<field name="assignments" type="assignments" panel_position="left" setinoverride="false"/>
+	</fieldset>
+
+</form>

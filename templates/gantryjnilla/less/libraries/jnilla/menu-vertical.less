@@ -1,0 +1,37 @@
+// Note: There msut be no spaces between the menu elements markup
+.menu-vertical {
+	.prepare-menu;
+
+	li {
+		display: block;
+	}
+	
+	.item {
+		display: block;
+		line-height: 1em;
+		padding: 1em;
+	}
+	
+	.item {
+		&:hover, &:focus{
+			text-decoration: none;
+			.active-state;
+		}
+	}
+	
+	.active > .item {
+		.active-state;
+	}
+
+	ul {
+		margin-left: 2em;
+		border-left: 1px solid #cac8b9;
+	}
+	
+	// mixins
+	.active-state {
+		color: white;
+		background-color: @linkColor;
+	}
+}
+

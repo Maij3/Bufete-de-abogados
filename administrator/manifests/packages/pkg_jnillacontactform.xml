@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="package" method="upgrade">
+	<!-- metadata -->
+	<name>pkg_jnillacontactform</name>
+	<packagename>jnillacontactform</packagename>
+	<description>PKG_JNILLACONTACTFORM_XML_DESCRIPTION</description>
+	<creationDate>Mar 2016</creationDate>
+	<author>jnilla.com</author>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>http://www.jnilla.com/</authorUrl>
+	<copyright>Copyright (C) 2016 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>0.0.1</version>
+	
+	<!-- installer script -->
+	<scriptfile>script.php</scriptfile>
+	
+	<!-- system languages -->
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.pkg_jnillacontactform.sys.ini</language>
+    </languages>
+	
+	<!-- packages -->
+	<files>
+		<file type="module" id="jnillacontactform" >mod_jnillacontactform.zip</file>
+		<file type="plugin" group="system" id="jnillacontactform" >plg_system_jnillacontactform.zip</file>
+	</files>
+	
+</extension>

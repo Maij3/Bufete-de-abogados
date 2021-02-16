@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		
+		<fieldset name="jnfields" label="Jn Fields">
+			<field 
+                type="editor"
+				name="foreContent"
+				label="HTML foreContent"
+				editor="codemirror"
+				filter="raw"
+            />
+		
+			<field 
+                name="jn_form_fields_left"     
+                type="subform"     
+                formsource="plugins/content/jnfields/custom-forms/subform-mod-practice-areas-list.xml"
+                multiple="true"       
+                label="Add items left"     
+                description="click on the (+) sign to add multiple fields and on the (-) sign to delete them"       
+                layout="joomla.form.field.subform.repeatable-table"    
+            />
+            
+
+		</fieldset>
+	</fields>
+</form>

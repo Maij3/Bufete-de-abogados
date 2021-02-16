@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="jnilla_framework" label="Jn Framework">
+		
+			<field
+				name="block_class"
+				type="textarea" rows="3"
+				label="PLG_CONTENT_JNILLA_BLOCK_CLASS_LABEL"
+				description="PLG_CONTENT_JNILLA_BLOCK_CLASS_DESC" 
+			/>
+			<field 
+				name="disableLayoutContainer"
+				label="Disable Layout Container" 
+				description="Removes the parent layout container. This affects the entire layout row."
+				type="radio"
+				default="0"
+				class="btn-group btn-group-yesno"
+				>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="enableBlockContainer"
+				label="Enable Block Container" 
+				description="Adds a container inside the block"
+				type="radio"
+				default="0"
+				class="btn-group btn-group-yesno"
+				>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="attribs">
+		<fieldset name="jnopengraph" label="Jn OpenGraph">
+			<field name="spacer-inherit"
+				type="spacer"
+				label="- Some empty values on Facebook will inherit from the site configuration or article data (if the page is an article). &lt;br&gt; 
+					- Some empty values on Twitter will inherit from Facebook values. &lt;br&gt; 
+					- Non empty menu item values will override articles values.
+					"
+			/>
+		
+			<!-- Facebook -->
+			
+			<field name="facebook_notes" 
+				type="note" 
+				label="Facebook" 
+			/>
+			<field name="facebook_og_title"
+				type="text"
+				label="og:title"
+			/>
+			<field name="facebook_og_description"
+				type="textarea"
+				label="og:description"
+				rows="6"
+			/>
+			<field name="facebook_og_image"
+				type="media"
+				label="og:image"
+			/>
+			<field name="facebook_og_site_name"
+				type="text"
+				label="og:site_name"
+			/>
+			
+			<!-- Twitter -->
+			
+			<field name="twitter_notes" 
+				type="note" 
+				label="Twitter" 
+			/>
+			<field name="twitter_title"
+				type="text"
+				label="twitter:title"
+			/>
+			<field name="twitter_description"
+				type="textarea"
+				label="twitter:description"
+				rows="6"
+			/>
+			<field name="twitter_image"
+				type="media"
+				label="twitter:image"
+			/>
+			<field name="twitter_site"
+				type="text"
+				label="twitter:site (@username)"
+			/>
+		</fieldset>
+	</fields>
+</form>
+
+
+

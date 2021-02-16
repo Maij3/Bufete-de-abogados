@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JNOPENGRAPH</name>
+	<author>jnilla.com</author>
+	<creationDate>Feb 2015</creationDate>
+	<copyright>Copyright (C) 2015 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_SYSTEM_JNOPENGRAPH_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<folder>forms</folder>
+		<filename plugin="jnopengraph">jnopengraph.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		
+	</config>
+</extension>
+
+
+
+

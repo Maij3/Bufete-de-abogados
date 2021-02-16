@@ -1,0 +1,93 @@
+.mod-areas-de-practica{
+	background-image:url("../images/bg.jpg");
+	background-size:cover;
+	background-repeat:round;
+	padding-top:40px;
+	h1{
+		text-align:center;	
+	}
+	h2{
+		text-align:center;
+		font-size:30px;
+		color:#0e70bb;
+	}
+	.linea {
+  		 display: block;
+    		 position: relative;
+    		 width: 50px;
+                 border: 3px solid #333333;
+                 margin: auto;
+    		 background: #333333;
+                 margin-top: 30px;
+		 margin-bottom:30px;
+        }
+	.slick-slide {
+		transform:scale(0.9);
+	}
+	.slick-slide img{
+		clip-path: polygon(100% 0, 100% 83%, 91% 100%, 0 100%, 0 0);
+		width:663px;
+		height:auto;
+	}
+
+	a.blog-item-readmore {
+		display: inline-block;
+    		padding: 20px 30px;
+   		color: #fff;	
+		///////////////
+    		background: rgb(144,104,16);
+		background: linear-gradient(90deg, rgba(144,104,16,1) 0%, rgba(201,148,18,1) 100%, rgba(255,255,255,1) 100%);
+    		font-family: "proximanova";
+    		font-weight: bold;
+    		font-size: 25px;
+	}
+	.border{
+		border: 3px solid rgb(144,104,16);
+   		padding: 5px;
+		display:inline-block;
+		margin-top:15px;
+	}
+	h3.blog-item-heading {
+		color:#0e70bb;
+		margin-bottom: 15px;
+                margin-top: 15px;
+        }
+
+	button.slick-prev.slick-arrow {
+		position: absolute;
+                bottom: 2%;
+		z-index: 99999;
+		border: none;
+                background: transparent;
+		right:12%;
+		@media only screen and (max-width:767px){
+			right:24%;	
+		}
+		@media only screen and (min-width:768px) and (max-width:979px){
+			right:15%;	
+		}
+		&:before{
+			content:"";
+			display:block;
+			width:40px;
+			height:21px;
+			background-image:url("../images/arrow-1.png");
+		}
+	}
+
+	button.slick-next.slick-arrow {
+		position: absolute;
+                bottom: 2%;
+                right: 7%;
+		z-index: 99999;
+		border: none;
+                background: transparent;
+		&:before{
+			content:"";
+			display:block;
+			width:41px;
+			height:21px;
+			background-image:url(../images/arrow-2.png);
+		}
+        }
+}

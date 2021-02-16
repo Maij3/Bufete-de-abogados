@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="jnilla_framework" label="Jn Framework">
+		
+			<field
+				name="body_class"
+				type="textarea" rows="3"
+				label="PLG_CONTENT_JNILLA_BODY_CLASS_LABEL"
+				description="PLG_CONTENT_JNILLA_BODY_CLASS_DESC" 
+			/>
+			
+		</fieldset>
+	</fields>
+</form>

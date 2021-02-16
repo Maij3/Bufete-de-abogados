@@ -1,0 +1,88 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+//
+// Jnilla gutterless grid
+// --------------------------------------------------
+#jn-grid {
+	.fluid {
+		@fluidGridColumnWidth: percentage(1/12);
+		@fluidGridGutterWidth: 0;
+
+		// span
+		.jn-span-x (@index) when (@index > 0) {
+			.jn-span-@{index} { .span(@index); }
+			.jn-span-x(@index - 1);
+		}
+		.jn-span-x (0) {}
+
+		// push
+		.jn-push-x (@index) when (@index > 0) {
+			.jn-push-@{index} { .push(@index); }
+			.jn-push-x(@index - 1);
+		}
+		.jn-push-x (0) {}
+		
+		// pull
+		.jn-pull-x (@index) when (@index > 0) {
+			.jn-pull-@{index} { .pull(@index); }
+			.jn-pull-x(@index - 1);
+		}
+		.jn-pull-x (0) {}
+
+		// offset
+		.jn-offset-x (@index) when (@index > 0) {
+			.jn-offset-@{index} { .offset(@index); }
+			.jn-offset-@{index}:first-child { .offsetFirstChild(@index); }
+			.jn-offset-x(@index - 1);
+		}
+		.jn-offset-x (0) {}
+
+		.offset (@columns) {
+			margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) + (@fluidGridGutterWidth*2);
+			*margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + (@fluidGridGutterWidth*2) - (.5 / @gridRowWidth * 100 * 1%);
+		}
+
+		.offsetFirstChild (@columns) {
+			margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) + (@fluidGridGutterWidth);
+			*margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);
+		}
+
+		.span (@columns) {
+			width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+			*width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+		}
+
+		.push (@columns) {
+			left: @fluidGridColumnWidth * @columns;
+		}
+		
+		.pull (@columns) {
+			left: -(@fluidGridColumnWidth * @columns);
+		}
+
+		// render
+		.jn-row-fluid {
+			width: 100%;
+			.clearfix();
+			[class*="jn-span-"] {
+				display: inline;
+				float: left;
+				position: relative;
+				margin: 0px;
+			}
+
+			.jn-span-x (@gridColumns);
+			.jn-offset-x (@gridColumns);
+			.jn-push-x (@gridColumns);
+			.jn-pull-x (@gridColumns);
+		}
+	}
+}
+
+
+
+
+

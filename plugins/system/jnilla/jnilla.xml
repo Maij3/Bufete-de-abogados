@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JNILLA</name>
+	<author>jnilla.com</author>
+	<creationDate>Dec 2014</creationDate>
+	<copyright>Copyright (C) 2014 jnilla.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>digitalcomputer2142@gmail.com</authorEmail>
+	<authorUrl>www.jnilla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_JNILLA_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>language</folder>
+		<filename plugin="jnilla">jnilla.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="development_mode" type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_SYSTEM_JNILLA_FIELD_DEVELOPMENT_MODE_LABEL"
+					description="PLG_SYSTEM_JNILLA_FIELD_DEVELOPMENT_MODE_DESC"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
