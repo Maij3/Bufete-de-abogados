@@ -56,3 +56,21 @@ Interval: 21600
 
 
 
+======================
+2021-02-16 14:26:48
+Timer: 65938.526372194
+Interval: 21600
+======================
+--Ignore
+/opt/lampp/htdocs/Bufete-De-Abogados/configuration.php
+/opt/lampp/htdocs/Bufete-De-Abogados/index.php
+/opt/lampp/htdocs/Bufete-De-Abogados/administrator/index.php
+/opt/lampp/htdocs/Bufete-De-Abogados/administrator/language/en-GB/en-GB.localise.php
+/opt/lampp/htdocs/Bufete-De-Abogados/language/en-GB/en-GB.localise.php
+--Delete
+/opt/lampp/htdocs/Bufete-De-Abogados/README.md
+
+
+
+
+

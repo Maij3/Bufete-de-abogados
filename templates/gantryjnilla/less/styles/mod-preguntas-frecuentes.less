@@ -1,13 +1,61 @@
 .mod-preguntas-frecuentes{
+   padding-top:50px;
+   padding-bottom:50px;   
+   h1{
+  	text-align:center;
+	color:#0e70bb
+   }
   .accordion {
     margin-bottom: 22.4px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-between;
    }
   .accordion-group {
-    flex-basis: 45%;
+    flex-basis: 48%;
     margin-bottom:20px;
-  }
+    background-image:url(../images/bg-3.jpg);
+    background-size:cover;
+    background-repeat:round;
+    @media only screen and (max-width:767px){
+    	flex-basis:100%;
+    }
+   }
+   a.accordion-toggle.collapsed {
+   	color:#fff;
+	text-decoration:none;
+	&:after{
+		content:"";
+		display:block;
+		width:25px;
+		height:26px;
+		float:right;
+		background-image:url("../images/plus.png");
+	}
+   }
+   .accordion-heading .accordion-toggle {
+    display: block;
+    padding: 20px 15px;
+    color: #fff;
+    font-size:23px;
+    font-family:"proximanova";
+    font-weight:normal;
+   }
+  .linea {
+    display: block;
+    position: relative;
+    width: 50px;
+    border: 3px solid #0e70bb;
+    margin: auto;
+    background:#0e70bb;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .accordion-inner {
+    padding: 9px 15px;
+    border-top: 1px solid #e5e5e5;
+    color: #fff;
+   }
+
 }
