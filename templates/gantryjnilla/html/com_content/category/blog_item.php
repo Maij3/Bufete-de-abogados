@@ -13,8 +13,9 @@ $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->
     <div class="blog-item">
         <h2 class="blog-holder">
             <div class="publish-date">
-                <span class="month"><?php echo JHTML::_('date', $item->created, "M"); ?></span>
                 <span class="day"><?php echo JHTML::_('date', $item->created, "d"); ?></span>
+                <span class="m-y"><?php echo JHTML::_('date', $item->created, "M , Y"); ?></span>
+
             </div>
     		<a href="<?php echo $link; ?>" class="blog-img">
 					<?php echo JLayoutHelper::render('jnilla.article-intro-image',
@@ -31,15 +32,15 @@ $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->
             </a>
         </h3>
                   
-       <p class="testimonial-item-date">  <?php echo JHTML::_('date', $item->created, "F d,Y"); ?> | in Uncategorized</p>
-       
         <p class="blog-item-text">
             <?php echo JHtml::_('string.truncate', strip_tags($item->introtext, '<a>'), 255); ?>
-              
-              <a class="blog-item-readmore" href="<?php echo $link; ?>">
-            <?php echo JText::_('COM_CONTENT_READ_MORE_TITLE').""; ?>
+	     <div class="border">
+		 <a class="blog-item-readmore" href="<?php echo $link; ?>">
+            <?php echo JText::_('Leer Mas').""; ?>
         </a> 
-        </p>
+	
+	     </div>
+                     </p>
 
        
 

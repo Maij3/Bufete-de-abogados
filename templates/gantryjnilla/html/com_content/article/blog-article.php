@@ -22,7 +22,7 @@ $images = json_decode($item->images);
         <?php endif; ?>
 
         <div class="module">
-            <time class="publish-date-one" pubdate="pubdate"><?php echo JHTML::_('date', $item->publish_up, "F j, Y"); ?></time>
+            
             <?php if (!empty($images->image_fulltext)) : ?>
                 <div class="article-image">
                     <img src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>" itemprop="image" class="jn-holder" data-holder="wide" />

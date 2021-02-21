@@ -14,6 +14,11 @@
 		justify-content: space-around;
 		height: 250px;
                 overflow-y: auto;
+		@media only screen and (max-width:767px){
+			align-content:center;
+			align-items:center;
+			justify-content:center;
+		}
 	}
 	.list li{
 		flex-basis: 19%;;
@@ -22,8 +27,6 @@
 	        text-align: center;
 		color:#fff;
 		margin-bottom: 50px;
-		//clip-path: polygon(100% 0,100% 86%,90% 100%,0 100%,0 0);
-		//clip-path: polygon(100% 0,100% 83%,91% 100%,0 100%,0 0);
 		clip-path: polygon(100% 0, 100% 73%, 90% 100%, 0 100%, 0 0);
     		background: #104f95;
     		background: linear-gradient(90deg,#104f95 0%,#1858a0 50%,#2265af 100%);
@@ -33,7 +36,15 @@
 		margin-right: 7px;
 		display: flex;
 		justify-content: center;
-		align-items: center;	
+		align-items: center;
+		@media only screen and (max-width:767px){
+			flex-basis:85%;
+			margin-right:unset !important;
+			padding:20px 0px;
+		}
+	        @media only screen and (min-width:768px) and (max-width:979px){
+			flex-basis:29%;	
+		}	
 	 }
 	 .list a{
 	 	color:#fff;

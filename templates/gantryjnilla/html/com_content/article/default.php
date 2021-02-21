@@ -7,7 +7,7 @@ $images = json_decode($item->images);
 ?>
 <div class="article" itemscope itemtype="http://schema.org/Article" data-article-id="<?php echo $item->id; ?>">
 	
-	<h1 class="page-heading" itemprop="name"><?php echo $item->title; ?></h1>
+	<h1 class="page-heading" itemprop="name"> <p style="text-transform: capitalize; font-size:45px;" >Areas De Practica</p> <span class="linea"></span><?php echo $item->title; ?></h1>
 
 	<?php if (!empty($images->image_fulltext)) : ?>
 		<div class="article-image">

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="jnfields" label="Jn Fields">
+			<field 
+				Type= "spacer"
+				Name= "spacer-1"
+				Label= "This module takes information from the menu item. Please refer to the menu manager to edit this module information" 
+			/>
+			<field 
+				name="subHeading"
+				label="Sub-heading"
+				type="text"
+				default=""
+			/>
+			<field 
+				name="image" 
+				label="Image"
+				type="media" 
+				directory="mod-page-heading" 
+			/>
+		</fieldset>
+	</fields>
+</form>

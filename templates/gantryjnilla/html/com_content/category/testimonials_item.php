@@ -13,7 +13,7 @@ $attrib = json_decode($item->attribs);
     <div class="row-fluid">
         <div class="span12">
             <div class="info">
-                <p class="blog-title"><?php echo $item->title; ?></p>
+                <p class="testimonial-title"><?php echo $item->title; ?></p>
    		         <?php echo $item->introtext; ?> 
             </div>
 

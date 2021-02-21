@@ -1,3 +1,78 @@
 .mod-banner{
-  padding:0;
+ 	background-image:url(../images/bg-8.png);
+  	background-size:cover;
+  	background-repeat:round;
+   	.banner {
+    		position: relative;
+		left: 0%;
+		transform: scale(0.8);
+		top: 0px;
+		width: 1200px;
+		@media only screen and (min-width:768px) and (max-width:979px){
+			transform:scale(0.4);
+			left: -32%;
+		}
+		@media only screen and (min-width:980px) and (max-width:1199px){
+			left: -15%;
+			transform: scale(0.5);
+		}
+		@media only screen and (min-width:1700px){
+			transform:unset;
+		}
+   	}
+	h1{
+		font-family:"baskerville";
+		font-weight:bold;
+		font-size:53px;
+	}
+	.flex-container{
+	
+		&:first-child{
+			text-align:center;
+		//	background:#031d38;
+			background-image: url(../images/Rectangle.png);
+			color:white;
+	//		opacity:0.5;
+			padding-top: 20px;
+			padding-bottom: 20px;	
+		}
+		&:nth-child(2){
+			text-align:center;
+		}
+		&:nth-child(3){
+			display:flex;
+			justify-content:center;
+			display:none;
+		}
+	}
+	.subtitle {
+		font-size:40px;
+		font-family:"baskerville";
+	}
+	.sub-subtitle {
+		font-family:"proximanova";
+		font-size:35px;
+	}
+	.info{
+		color:#fff;
+		font-size:18px;
+		margin-bottom:40px;
+	}
+	.border {
+   		 margin-top: 40px;
+    		 margin-bottom: 40px;
+    		 border: 2px solid #fff;
+    		 display: inline-block;
+    		 padding: 5px;
+	 }
+	.border a{
+		font-family:"proximanova";
+		font-weight:bold;
+		font-size:25px;
+		color:#0e70bb;
+		padding:20px;
+		background:#fff;
+		display:inline-block;	
+	}
+
 }

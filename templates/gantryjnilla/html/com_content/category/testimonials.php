@@ -3,7 +3,7 @@ defined('_JEXEC') or die;
 
 $params = $this->params;
 ?>
-   <h1>Testimonios <span class="linea"></span></h1>
+   <h1>TESTIMONIOS <span class="linea"></span></h1>
 <div class="testimonials" itemscope itemtype="http://schema.org/Blog">
 
 	<?php if ($params->get('show_page_heading') && !empty($params->get('page_heading'))) : ?>
