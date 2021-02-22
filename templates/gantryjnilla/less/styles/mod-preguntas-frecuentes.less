@@ -8,6 +8,13 @@
 		font-size:38px;
 	}
    }
+   li{
+    	font-family: "proximanova";
+    	font-weight: normal;
+    	font-style: normal;
+    	font-size: 28px;
+    	line-height: 40px;
+   }
   .accordion {
     margin-bottom: 22.4px;
     display: flex;
@@ -28,6 +35,8 @@
    a.accordion-toggle.collapsed {
    	color:#fff;
 	text-decoration:none;
+	//--CAMBIOS--//
+	line-height:35px;
 	@media only screen and (max-width:979px){
 		text-align:center;
 	}
@@ -36,7 +45,9 @@
 		display:block;
 		width:25px;
 		height:26px;
-		float:right;
+		//float:right;
+		background-repeat:round;
+		background-size:cover;
 		background-image:url("../images/plus.png");
 		@media only screen and (max-width:979px){
 			float:none;
@@ -46,12 +57,17 @@
 	}
    }
    .accordion-heading .accordion-toggle {
-    		display: block;
+    		display:flex;//display: block;
     		padding: 20px 15px;
     		color: #fff;
-    		font-size:23px;
+    		font-size:28px;
     		font-family:"proximanova";
     		font-weight:normal;
+		//--CAMBIOS--///
+		align-items:center;
+		padding-right:34px;
+		line-height:35px;
+		justify-content:center;
 		@media only screen and (max-width:979px){
 			text-align:center;
 		}
